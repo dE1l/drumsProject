@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "drumsproject"
+version = "0.1.0"
+description = ""
+authors = ["Роман Бельцов <roman.beltsov@inplatlabs.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.2"
+uvicorn = "^0.22.0"
+fastapi-users = {extras = ["oauth", "sqlalchemy"], version = "^11.0.0"}
+httpx-oauth = "^0.11.2"
+asyncpg = "^0.27.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.15"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
